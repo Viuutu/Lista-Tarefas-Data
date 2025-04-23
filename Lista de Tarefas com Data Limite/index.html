@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="dark">
+  <div class="theme-toggle" onclick="toggleTheme()">
+    <i class="fas fa-sun" id="themeIcon"></i>
+  </div>
+  <div class="container">
+    <h1>📋 Lista de Tarefas</h1>
+    <form id="taskForm">
+      <input type="text" id="taskInput" placeholder="Nova tarefa" required />
+      <input type="date" id="dueDate" required />
+      <input type="time" id="dueTime" required />
+      <button type="submit"><i class="fas fa-plus"></i></button>
+    </form>
+    <ul id="taskList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
